@@ -60,7 +60,7 @@ export class HomePage implements OnInit {
     const showNewFeatureFlag = configValue.asBoolean();
       console.log('NEWFEATUREFLAG', showNewFeatureFlag);
        // Actualizamos la variable para controlar la UI
-      this.showNewFeature = true;
+      this.showNewFeature = showNewFeatureFlag;
       console.log('FLAG', this.showNewFeature);
     } catch(error) {
       console.error('Error al obtener el Feature Flag:', error);
